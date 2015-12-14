@@ -1,0 +1,21 @@
+/* Modified from https://css-tricks.com/star-ratings/ */
+.rating {
+  font-size: 30px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  cursor: pointer;
+}
+
+.rating > span {
+  display: inline-block;
+  color: #B4E6FD;
+  position: relative;
+  width: 1.1em;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  content: "\2605";
+  color: #B4E6FD;
+  position: absolute;
+}
